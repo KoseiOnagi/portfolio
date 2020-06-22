@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
 .accbox p{
-	color:#ff8080;
+	color:#008080;
 	font-size:15px;
 }
 
-a{
+header{
 	color:#004040;
-	font-size:50px;
-	font-family:"Palatino Linotype";
+	font-size:40px;
+	font-family:"HG行書体";
 }
 
 body {
@@ -17,18 +17,36 @@ body {
    text-align:center;
 }
 
+button{
+	display       : inline-block;
+	border-radius : 0.5em;
+	text-align    : center;
+	cursor        : pointer;
+	padding       : 5px 15px;
+	background    : #0080ff;
+	color         : #ffff80;
+	line-height   : 1em;
+	transition    : .3s;
+	border        : 1px solid #b3e1fd;
+	width         : auto;
+	font-family: "HG行書体";
+	font-size:30px;
+}
+
 .accbox {
     margin: 2em 0;
     padding: 0;
     max-width: 600px;
     text-align:center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .accbox label {
     display: block;
     margin: 1.5px 0;
     padding : 11px 12px;
-    color :#000000;
+    color :#008080;
     font-weight: bold;
     background :#80ffff;
     cursor :pointer;
@@ -36,7 +54,7 @@ body {
 }
 
 .accbox label:hover {
-    background :#80ffff;
+    background :#ecf5da;
 }
 
 .accbox input {
@@ -54,7 +72,7 @@ body {
 .cssacc:checked + .accshow {
     height: auto;
     padding: 5px;
-    background: #eaeaea;
+    background: #ffffff;
     opacity: 1;
 }
 

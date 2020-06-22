@@ -22,6 +22,8 @@
 						<form method="post" action="Home.jsp">
 							<button>ホームに戻る</button>
 						</form>
+					</div>
+				</header>
 						
 						<div class="accbox">
     							<label for="fukuoka">福岡県</label>
@@ -112,8 +114,7 @@
       									</p>
  						  	 		</div>
  							</div>
-					</div>
-				</header>
+					
 		</div>
 	</body>
 </html>

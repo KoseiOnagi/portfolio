@@ -23,8 +23,9 @@
 						<form method="post" action="Home.jsp">
 							<button>ホームに戻る</button>
 						</form>
-					
-					
+					</div>
+ 				</header>
+
 					<div class="accbox">
     					<label for="dohoku">道北</label>
    						<input type="checkbox" id="dohoku" class="cssacc" />
@@ -66,9 +67,8 @@
 								倶知安:016030
       							</p>
  						   </div>
- 						</div>
  					</div>
- 				</header>
+ 					
 			</div>
 	</body>
 </html>

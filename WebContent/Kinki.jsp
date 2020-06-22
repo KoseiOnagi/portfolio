@@ -23,7 +23,8 @@
 						<form method="post" action="Home.jsp">
 							<button>ホームに戻る</button>
 						</form>
-					
+					</div>
+				</header>
 						<div class="accbox">
     							<label for="mie">三重県</label>
    								<input type="checkbox" id="mie" class="cssacc" />
@@ -81,8 +82,7 @@
       									</p>
  						   			</div>
  							</div>
-					</div>
-				</header>
+					
 		</div>
 	</body>
 </html>

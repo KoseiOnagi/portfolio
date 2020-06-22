@@ -24,6 +24,9 @@
 							<button>ホームに戻る</button>
 						</form>
 					
+					</div>
+				</header>
+				
 					<div class="accbox">
     						<label for="nigata">新潟県</label>
    							<input type="checkbox" id="nigata" class="cssacc" />
@@ -103,8 +106,7 @@
       								</p>
  						   		</div>
  						</div>
-					</div>
-				</header>
+					
 		</div>
 	</body>
 </html>
