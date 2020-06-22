@@ -21,12 +21,12 @@
 						</form>
 					<p><a href="Hokkai.jsp">北海道</a></p>
 					<p><a href="Tohoku.jsp">東北</a></p>
-					<h5>関東</h5>
-					<h5>中部</h5>
-					<h5>近畿</h5>
-					<h5>山陰・山陽</h5>
-					<h5>四国</h5>
-					<h5>九州</h5>
+					<p><a href="Kanto.jsp">関東</a></p>
+					<p><a href="Chubu.jsp">中部</a></p>
+					<p><a href="Kinki.jsp">近畿</a></p>
+					<p><a href="Sanin.jsp">山陰・山陽</a></p>
+					<p><a href="Shikoku.jsp">四国</a></p>
+					<p><a href="Kyushu.jsp">九州</a></p>
 							
 					</div>
 				</header>

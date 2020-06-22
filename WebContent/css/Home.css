@@ -1,98 +1,29 @@
 @charset "UTF-8";
 
-.img{
-	float: left;
-	margin-right: 15px;
-	width: 60px;
-	position: relative;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-.img img{
-	height: 70px;
-}
-
-.logo{
-	height: 80px;
-}
-
-.tag{
-	border: solid 1px #d4d4d4;
-	padding: 0px 5px;
-	text-align: center;
-	width: 60px;
-	display: inline-block;
-	margin: 5px 5px 5px 0px;
-}
-
-.detail{
-	border-top: solid 1px #d4d4d4;
-	font-size: 15px;
-}
-
-.catch{
-	font-size: 20px;
-}
-
-.live{
-	float: right;
-	width: 25px;
-	height: 25px;
-	margin-right: 15px;
-}
-
 iframe{
 	border: none;
 }
 
 body{
 	background-image:url("https://www.pakutaso.com/shared/img/thumb/ELFADSC08931_TP_V.jpg");
+	background-size: cover;
 }
 
-
-.addsearch{
-	margin-top: 20px;
-	font-family: "Yu Mincho";
-}
- 
 header{
-	width: 80%;
-	padding: 5px 0px 20px 0px;
+	width: 100%;
+	padding: 5px 0px 5px 0px;
 	margin: 0 auto;
 	text-align: center;
-  	color: black;
-  	
+  	color: #ffffff;
+  	font-family:"impact";
+  	font-size:50px;
 }
 
-.live-sort{
-	float: right;
-	padding-right: 30%;
-	 
-}
-
-
-.headline{
-	font-size: 80px;
-	font-family: "Yu Gothic UI";
-	width: 50%;
-	margin: 0 auto;
-	
-}
-
-h1 img{
-	width: 10%;
-	height: 10%;
-}
-
-
-input[type="text"], .frm input[type="submit"] {
+input[type="text"]{
 	-moz-box-sizing    : border-box;
 	-webkit-box-sizing : border-box;
 	box-sizing         : border-box;
-
+	color:#b3e1fd;
 }
 
 input[type="text"]{
@@ -101,11 +32,12 @@ input[type="text"]{
 	height        : 30px;
 	border        : solid 1px #d4d4d4;
 	transition    : .3s;
-	font-family: "Meiryo UI";
+	font-family: "HG行書体";
+	color:#b3e1fd;
 }
 
 input[type="text"]:focus{
-	border-color  : black;
+	border-color  : #0080c0;
 	outline       : none;
 }
 
@@ -115,64 +47,17 @@ input[type="submit"] {
 	text-align    : center;
 	cursor        : pointer;
 	padding       : 5px 15px;
-	background    : #FF3366;
+	background    : #0080ff;
 	color         : #ffff80;
 	line-height   : 1em;
 	transition    : .3s;
-	border        : 1px solid #d4d4d4;
+	border        : 1px solid #b3e1fd;
 	width         : auto;
+	font-family: "HG行書体";
 }
 
 input[type="submit"]:hover {
 	box-shadow    : none;
 	color         : #FF3366;
-	background    : #ffffff;
-}
-
-.frm input[type="submit"]{
-	font-size: 12pt;
-	font-family: "Yu Mincho";
-}
-
-.status{
-	border-bottom: solid 1px black;
-	margin: 5px 0px 25px 0px;
-	
-	color: black;
-	display: block;
-	min-width: 40em;
-	height: 35px;
-	vertical-align: center;
-	line-height: 40px;
-}
-
-.status-color{
-	width: 10px;
-	height: 100%;
-	background-color: black;
-	float: left;
-	margin-right: 5px;
-}
-
-.menu input{
-	margin-left: 5px;
-	margin-right: 5px;
-}
-
-.menu {
-	list-style: none;
-	height: 0;
-	float: right;
-	padding-top: 20px;
-	font-size: 15px;
-}
-
-.menu li {
-	text-align: center;
-	margin-right: 5px;
-	float: left;
-}
-
-.menu input[type="submit"]{
-	font-size: 8pt;
+	background    : #b3e1fd;
 }

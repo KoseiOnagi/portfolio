@@ -1,21 +1,52 @@
 @charset "UTF-8";
 
 header{
-	width: 80%;
-	padding: 5px 0px 20px 0px;
+	width: 70%;
+	padding: 5px 0px 5px 0px;
 	margin: 0 auto;
-	text-align: center;
-  	color: black;
-  	font-family:"Yu Mincho";
-  	font-size:30px;
+  	color: #008080;
+  	text-align: center;
+  	font-family:"impact";
+  	font-size:35px;
 }
 
 .figure p{
 	font-size:25px;
+	display: inline-block;
 }
 
 .figure button{
 	box-shadow    : none;
 	color         : #004080;
 	background    : #ffffff;
+}
+
+body {
+   background-image: url(https://lh3.googleusercontent.com/proxy/6HAQkhpMFN6Bldii_glDpduqS5B4psONHrnLL3BZpQiE_vmCns0SoUNWzqMzf75aPLDqzBhM6q3hjKKuEb1Yjv5ejKm5WZJCD9JGDgP4JuX_2NUcKXE9kbMte8OPKxCqXrSTtAvz9Uke16F3DStQGuRekPrtawRc0g=s0-d);
+   background-size: cover;
+}
+
+a {
+  text-decoration:none;
+}
+
+button{
+	display       : inline-block;
+	border-radius : 0.5em;
+	text-align    : center;
+	cursor        : pointer;
+	padding       : 5px 15px;
+	background    : #0080ff;
+	color         : #ffff80;
+	line-height   : 1em;
+	transition    : .3s;
+	border        : 1px solid #b3e1fd;
+	width         : auto;
+	font-family: "HG行書体";
+}
+
+button :hover {
+	box-shadow    : none;
+	color         : #FF3366;
+	background    : #b3e1fd;
 }

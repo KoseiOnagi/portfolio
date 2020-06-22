@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+.accbox p{
+	color:#008040;
+	font-size:15px;
+}
+
+a{
+	color:#004040;
+	font-size:50px;
+	font-family:"Palatino Linotype";
+}
+
+body {
+   background-image: url(https://cdn.jalan.jp/jalan/img/9/kuchikomi/1219/KXL/2f95f_0001219009_1.JPG);
+   background-size: cover;
+   text-align:center;
+}
+
+.accbox {
+    margin: 2em 0;
+    padding: 0;
+    max-width: 600px;
+    text-align:center;
+}
+
+.accbox label {
+    display: block;
+    margin: 1.5px 0;
+    padding : 11px 12px;
+    color :#000000;
+    font-weight: bold;
+    background :#80ffff;
+    cursor :pointer;
+    transition: all 0.5s;
+}
+
+.accbox label:hover {
+    background :#80ffff;
+}
+
+.accbox input {
+    display: none;
+}
+
+.accbox .accshow {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.cssacc:checked + .accshow {
+    height: auto;
+    padding: 5px;
+    background: #eaeaea;
+    opacity: 1;
+}

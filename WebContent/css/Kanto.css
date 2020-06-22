@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+.accbox p{
+	color:#008040;
+	font-size:15px;
+}
+
+a{
+	color:#004040;
+	font-size:50px;
+	font-family:"Palatino Linotype";
+}
+
+body {
+   background-image: url(https://rurubu.jp/img_srw/andmore/images/4DDnVkUBc8qWDj4Gf4oHKYgr9poG2anPgBckdKOu.jpeg);
+   background-size: cover;
+   text-align:center;
+}
+
+.accbox {
+    margin: 2em 0;
+    padding: 0;
+    max-width: 600px;
+    text-align:center;
+}
+
+.accbox label {
+    display: block;
+    margin: 1.5px 0;
+    padding : 11px 12px;
+    color :#0000ff;
+    font-weight: bold;
+    background :#ff8040;
+    cursor :pointer;
+    transition: all 0.5s;
+}
+
+.accbox label:hover {
+    background :#804040;
+}
+
+.accbox input {
+    display: none;
+}
+
+.accbox .accshow {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.cssacc:checked + .accshow {
+    height: auto;
+    padding: 5px;
+    background: #eaeaea;
+    opacity: 1;
+}
