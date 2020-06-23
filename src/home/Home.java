@@ -29,6 +29,7 @@ public class Home extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setAttribute ("weather",request.getParameter("code"));  
 		
 			ServletContext context = getServletContext(); // サーブレットがサーブレットコンテナーと通信するために使用する一連のメソッドを定義するServletContext(インターフェース)
 			RequestDispatcher dis = context.getRequestDispatcher("/Home.jsp"); 

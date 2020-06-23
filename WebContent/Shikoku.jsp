@@ -29,38 +29,74 @@
     							<label for="tokushima">徳島県</label>
    								<input type="checkbox" id="tokushima" class="cssacc" />
     								<div class="accshow">
-						    			 <p>
-        								徳島:360010
-										日和佐:360020
-      									</p>
+						    			 <div class="contents">
+						    		 		<form action="Home" method="get">
+        										<input type="hidden" name="code" value="360010">
+        										<input type="submit" value="徳島">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="360020">
+        										<input type="submit" value="日和佐">
+      										</form>
+      									</div>
  						   			</div>
  								<label for="kagawa">香川県</label>
    								<input type="checkbox" id="kagawa" class="cssacc" />
     								<div class="accshow">
-							    		 <p>
-        								高松:370000
-      									</p>
+							    		 <div class="contents">
+						    		 		<form action="Home" method="get">
+        										<input type="hidden" name="code" value="370000">
+        										<input type="submit" value="高松">
+      										</form>
+      									</div>
  							   		</div>
  								<label for="ehime">愛媛県</label>
    								<input type="checkbox" id="ehime" class="cssacc" />
     								<div class="accshow">
-							    		 <p>
-        								松山:380010
-										新居浜:380020
-										宇和島:380030
-      									</p>
+							    		 <div class="contents">
+						    		 		<form action="Home" method="get">
+        										<input type="hidden" name="code" value="380010">
+        										<input type="submit" value="松山">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="380020">
+        										<input type="submit" value="新居浜">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="380030">
+        										<input type="submit" value="宇和島">
+      										</form>
+      									 </div>
  							   		</div>
  								<label for="kohchi">高知県</label>
    								<input type="checkbox" id="kohchi" class="cssacc" />
     								<div class="accshow">
-						  		  		 <p>
-        								高知:390010
-										室戸岬:390020
-										清水:390030
-      									</p>
+						  		  		 <div class="contents">
+						    		 		<form action="Home" method="get">
+        										<input type="hidden" name="code" value="390010">
+        										<input type="submit" value="高知">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="390020">
+        										<input type="submit" value="室戸岬">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="390030">
+        										<input type="submit" value="清水">
+      										</form>
+      									 </div>
  						  	 		</div>
  							</div>
-					
 		</div>
 	</body>
 </html>

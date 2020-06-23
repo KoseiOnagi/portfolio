@@ -11,13 +11,33 @@ header{
 	font-family:"HG行書体";
 }
 
+button{
+	display       : inline-block;
+	border-radius : 0.5em;
+	text-align    : center;
+	cursor        : pointer;
+	padding       : 5px 15px;
+	background    : #ff00ff;
+	color         : #ffff80;
+	line-height   : 1em;
+	transition    : .3s;
+	border        : 1px solid #b3e1fd;
+	width         : auto;
+	font-family: "HG行書体";
+	font-size:30px;
+}
+
 body {
    background-image: url(https://tripeditor.com/wp-content/uploads/2019/07/05183546/shutterstock_1402069754-1200x800.jpg);
    background-size: cover;
    text-align:center;
 }
 
-button{
+.contents{
+	display:inline-block;
+}
+
+input[type="submit"]{
 	display       : inline-block;
 	border-radius : 0.5em;
 	text-align    : center;
@@ -30,7 +50,7 @@ button{
 	border        : 1px solid #b3e1fd;
 	width         : auto;
 	font-family: "HG行書体";
-	font-size:30px;
+	font-size:25px;
 	
 }
 
@@ -41,6 +61,7 @@ button{
     text-align:center;
     margin-left: auto;
     margin-right: auto;
+    font-family: "HG行書体";
 }
 
 .accbox label {
@@ -52,13 +73,14 @@ button{
     background :#80ffff;
     cursor :pointer;
     transition: all 0.5s;
+    font-size:25px;
 }
 
 .accbox label:hover {
     background :#ecf5da;
 }
 
-.accbox input {
+.accbox input[type="checkbox"] {
     display: none;
 }
 
@@ -68,26 +90,6 @@ button{
     overflow: hidden;
     opacity: 0;
     transition: 0.5s;
-    position: relative;
-}
-
-.accbox .accshow ::after{
-	content: "";
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  width: 0;
-  height: 0;
-  border: 8px solid transparent;
-  border-top-color: #fff;
-}
-
-.accbox .accshow.open ::after{
-	content: "";
-  position: absolute;
-  top: 15px;
-  border: 8px solid transparent;
-  border-bottom-color: #fff;
 }
 
 .cssacc:checked + .accshow {

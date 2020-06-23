@@ -11,13 +11,33 @@ header{
 	font-family:"HG行書体";
 }
 
+button{
+	display       : inline-block;
+	border-radius : 0.5em;
+	text-align    : center;
+	cursor        : pointer;
+	padding       : 5px 15px;
+	background    : #ff00ff;
+	color         : #ffff80;
+	line-height   : 1em;
+	transition    : .3s;
+	border        : 1px solid #b3e1fd;
+	width         : auto;
+	font-family: "HG行書体";
+	font-size:30px;
+}
+
 body{
 	background-image:url(https://shikoku-tourism.com/image/rendering/feature_paragraph_image/148/trim.1024/3/2?v=bbf41e123bbb3509366e7d611c7aff5a79e4e989);
 	background-size: cover;
 	text-align:center;
 }
 
-button{
+.contents{
+	display:inline-block;
+}
+
+input[type="submit"]{
 	display       : inline-block;
 	border-radius : 0.5em;
 	text-align    : center;
@@ -30,7 +50,7 @@ button{
 	border        : 1px solid #b3e1fd;
 	width         : auto;
 	font-family: "HG行書体";
-	font-size:30px;
+	font-size:25px;
 }
 
 .accbox {
@@ -40,6 +60,7 @@ button{
     text-align:center;
     margin-left: auto;
     margin-right: auto;
+    font-family: "HG行書体";
 }
 
 .accbox label {
@@ -51,13 +72,14 @@ button{
     background :#80ffff;
     cursor :pointer;
     transition: all 0.5s;
+    font-size:25px;
 }
 
 .accbox label:hover {
     background :#ecf5da;
 }
 
-.accbox input {
+.accbox input[type="checkbox"] {
     display: none;
 }
 

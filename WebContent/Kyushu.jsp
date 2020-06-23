@@ -29,92 +29,234 @@
     							<label for="fukuoka">福岡県</label>
    								<input type="checkbox" id="fukuoka" class="cssacc" />
     								<div class="accshow">
-						    			 <p>
-        								福岡:400010
-										八幡:400020
-										飯塚:400030
-										久留米:400040
-      									</p>
+						    			<div class="contents">
+						    		 		<form action="Home" method="get">
+        										<input type="hidden" name="code" value="400010">
+        										<input type="submit" value="福岡">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="400020">
+        										<input type="submit" value="八幡">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="400030">
+        										<input type="submit" value="飯塚">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="400040">
+        										<input type="submit" value="久留米">
+      										</form>
+      									 </div>
  						   			</div>
  								<label for="saga">佐賀県</label>
    								<input type="checkbox" id="saga" class="cssacc" />
     								<div class="accshow">
-							    		 <p>
-        								佐賀:410010
-										伊万里:410020
-      									</p>
- 							   		</div>
+							    		 <div class="contents">
+						    		 		<form action="Home" method="get">
+        										<input type="hidden" name="code" value="410010">
+        										<input type="submit" value="佐賀">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="410020">
+        										<input type="submit" value="伊万里">
+      										</form>
+      									 </div>
+							    	</div>
  								<label for="nagasaki">長崎県</label>
    								<input type="checkbox" id="nagasaki" class="cssacc" />
     								<div class="accshow">
-							    		 <p>
-        								長崎:420010
-										佐世保:420020
-										厳原:420030
-										福江:420040
-      									</p>
+							    		 <div class="contents">
+						    		 		<form action="Home" method="get">
+        										<input type="hidden" name="code" value="420010">
+        										<input type="submit" value="長崎">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="420020">
+        										<input type="submit" value="佐世保">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="420030">
+        										<input type="submit" value="厳原">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="420040">
+        										<input type="submit" value="福江">
+      										</form>
+      									 </div>
  							   		</div>
  								<label for="kumamoto">熊本県</label>
    								<input type="checkbox" id="kumamoto" class="cssacc" />
     								<div class="accshow">
-						  		  		 <p>
-        								熊本:430010
-										阿蘇乙姫:430020
-										牛深:430030
-										人吉:430040
-      									</p>
+						  		  		 <div class="contents">
+						    		 		<form action="Home" method="get">
+        										<input type="hidden" name="code" value="430010">
+        										<input type="submit" value="熊本">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="430020">
+        										<input type="submit" value="阿蘇乙姫">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="430030">
+        										<input type="submit" value="牛深">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="430040">
+        										<input type="submit" value="人吉">
+      										</form>
+      									 </div>
  						  	 		</div>
  						  	 	<label for="ohita">大分県</label>
    								<input type="checkbox" id="ohita" class="cssacc" />
     								<div class="accshow">
-						  		  		 <p>
-        								大分:440010
-										中津:440020
-										日田:440030
-										佐伯:440040
-      									</p>
- 						  	 		</div>
+						  		  		 <div class="contents">
+						    		 		<form action="Home" method="get">
+        										<input type="hidden" name="code" value="440010">
+        										<input type="submit" value="大分">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="440020">
+        										<input type="submit" value="中津">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="440030">
+        										<input type="submit" value="日田">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="440040">
+        										<input type="submit" value="佐伯">
+      										</form>
+      									 </div>
+						  		  	</div>
  						  	 	<label for="miyazaki">宮崎県</label>
    								<input type="checkbox" id="miyazaki" class="cssacc" />
     								<div class="accshow">
-						  		  		 <p>
-        								宮崎:450010
-										延岡:450020
-										都城:450030
-										高千穂:450040
-      									</p>
- 						  	 		</div>
+						  		  		 <div class="contents">
+						    		 		<form action="Home" method="get">
+        										<input type="hidden" name="code" value="450010">
+        										<input type="submit" value="宮崎">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="450020">
+        										<input type="submit" value="延岡">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="450030">
+        										<input type="submit" value="都城">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="450040">
+        										<input type="submit" value="高千穂">
+      										</form>
+      									 </div>
+						  		  	</div>
  						  	 	<label for="kagoshima">鹿児島県</label>
    								<input type="checkbox" id="kagoshima" class="cssacc" />
     								<div class="accshow">
-						  		  		 <p>
-        								鹿児島:460010
-										鹿屋:460020
-										種子島:460030
-										名瀬:460040
-      									</p>
- 						  	 		</div>
- 						  	 	<label for="okinawa">沖縄県(1)</label>
+						  		  		 <div class="contents">
+						    		 		<form action="Home" method="get">
+        										<input type="hidden" name="code" value="460010">
+        										<input type="submit" value="鹿児島">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="460020">
+        										<input type="submit" value="鹿屋">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="460030">
+        										<input type="submit" value="種子島">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="460040">
+        										<input type="submit" value="名瀬">
+      										</form>
+      									 </div>
+						  		  	</div>
+ 						  	 	<label for="okinawa">沖縄県</label>
    								<input type="checkbox" id="okinawa" class="cssacc" />
     								<div class="accshow">
-						  		  		 <p>
-        								那覇:471010
-										名護:471020
-										久米島:471030
-										南大東:472000
-      									</p>
+						  		  		 <div class="contents">
+						    		 		<form action="Home" method="get">
+        										<input type="hidden" name="code" value="471010">
+        										<input type="submit" value="那覇">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="471020">
+        										<input type="submit" value="名護">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="471030">
+        										<input type="submit" value="久米島">
+      										</form>
+      									 </div>
+      									 <div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="472000">
+        										<input type="submit" value="南大東">
+      										</form>
+      									</div>
+      									<div class="contents">
+						    		 		<form action="Home" method="get">
+        										<input type="hidden" name="code" value="473000">
+        										<input type="submit" value="宮古島">
+      										</form>
+      									 </div>	
+      									<div class="contents">	
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="474010">
+        										<input type="submit" value="石垣島">
+      										</form>
+      									</div>
+      									<div class="contents">
+      										<form action="Home" method="get">
+        										<input type="hidden" name="code" value="474020">
+        										<input type="submit" value="与那国島">
+      										</form>
+      									</div>
  						  	 		</div>
- 						  	 	<label for="okinawaken">沖縄県(2)</label>
-   								<input type="checkbox" id="okinawaken" class="cssacc" />
-    								<div class="accshow">
-						  		  		 <p>
-        								宮古島:473000
-										石垣島:474010
-										与那国島:474020
-      									</p>
- 						  	 		</div>
- 							</div>
-					
+ 					</div>
 		</div>
 	</body>
 </html>
