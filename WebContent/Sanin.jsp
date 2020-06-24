@@ -5,20 +5,20 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="css/Sanin.css">
-		<title>Sanin</title>
+		<title>Chugoku</title>
 	</head>
 	<body>
-	<body style="background-image: url(https://tori-dori.com/wp/wp-content/uploads/EBP15-24141.jpg)">
 		<div>
 				<header>
 					<h1 class="headline">
-						<a>Number List(山陰・山陽)</a>
+						<a>Chugoku's Number</a>
 					</h1>
 					<div class ="Sanin">
 						<form method="post" action="Number.jsp">
 							<button>エリア選択に戻る</button>
 						</form>
-						
+					</div>
+					<div class ="Sanin">
 						<form method="post" action="Home.jsp">
 							<button>ホームに戻る</button>
 						</form>

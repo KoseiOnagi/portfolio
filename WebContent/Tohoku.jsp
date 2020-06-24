@@ -7,19 +7,18 @@
 		<link rel="stylesheet" href="css/Tohoku.css">
 		<title>Tohoku</title>
 	</head>
-	
 	<body>
-	<body style="background-image: url(https://cdn.jalan.jp/jalan/img/9/kuchikomi/1219/KXL/2f95f_0001219009_1.JPG)">
 		<div>
 				<header>
 					<h1 class="headline">
-						<a>Number List(東北)</a>
+						<a>Tohoku's Number</a>
 					</h1>
 					<div class ="Tohoku">
 						<form method="post" action="Number.jsp">
 							<button>エリア選択に戻る</button>
 						</form>
-						
+					</div>
+					<div class ="Tohoku">
 						<form method="post" action="Home.jsp">
 							<button>ホームに戻る</button>
 						</form>

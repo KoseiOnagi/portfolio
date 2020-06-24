@@ -7,19 +7,18 @@
 		<link rel="stylesheet" href="css/Kanto.css">
 		<title>Kanto</title>
 	</head>
-	
 	<body>
-	<body style="background-image: url(https://rurubu.jp/img_srw/andmore/images/4DDnVkUBc8qWDj4Gf4oHKYgr9poG2anPgBckdKOu.jpeg)">
 		<div>
 				<header>
 					<h1 class="headline">
-						<a>Number List(関東)</a>
+						<a>Kanto's Number</a>
 					</h1>
 					<div class ="Kanto">
 						<form method="post" action="Number.jsp">
 							<button>エリア選択に戻る</button>
 						</form>
-						
+					</div>
+					<div class ="Kanto">
 						<form method="post" action="Home.jsp">
 							<button>ホームに戻る</button>
 						</form>

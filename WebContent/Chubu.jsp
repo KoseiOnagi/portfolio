@@ -9,17 +9,17 @@
 	</head>
 	
 	<body>
-	<body style="background-image: url(https://www.img-ikyu.com/contents/common/image/acc7/00050627/4/org/11391980.jpg)">
 		<div>
 				<header>
 					<h1 class="headline">
-						<a>Number List(中部)</a>
+						<a>Chubu's Number</a>
 					</h1>
 					<div class ="Chubu">
 						<form method="post" action="Number.jsp">
 							<button>エリア選択に戻る</button>
 						</form>
-						
+					</div>
+					<div class ="Chubu">
 						<form method="post" action="Home.jsp">
 							<button>ホームに戻る</button>
 						</form>

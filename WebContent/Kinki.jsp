@@ -7,19 +7,18 @@
 		<link rel="stylesheet" href="css/Kinki.css">
 		<title>Kinki</title>
 	</head>
-	
 	<body>
-	<body style="background-image: url(https://caede-kyoto.com/wp/wp-content/uploads/2019/02/%E4%BA%AC%E9%83%BD-%E6%A1%9C-%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88.jpg)">
 		<div>
 				<header>
 					<h1 class="headline">
-						<a>Number List(近畿)</a>
+						<a>Kinki's Number</a>
 					</h1>
 					<div class ="Kinki">
 						<form method="post" action="Number.jsp">
 							<button>エリア選択に戻る</button>
 						</form>
-						
+					</div>
+					<div class ="Kinki">
 						<form method="post" action="Home.jsp">
 							<button>ホームに戻る</button>
 						</form>

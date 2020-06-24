@@ -4,7 +4,7 @@ header{
 	width: 70%;
 	padding: 5px 0px 5px 0px;
 	margin: 0 auto;
-  	color: #008080;
+  	color: #004040;
   	text-align: center;
   	font-family:"impact";
   	font-size:40px;
@@ -55,7 +55,7 @@ header{
 }
 
 body {
-   background-image: url(https://imageslabo.com/wp-content/uploads/2019/05/774_sky_hikoukigumo_8245.jpg);
+   background-image: url("skyblue.jpg");
    background-size: cover;
 }
 
@@ -69,11 +69,11 @@ button{
 	text-align    : center;
 	cursor        : pointer;
 	padding       : 5px 40px;
-	background    : #0080ff;
-	color         : #ffff80;
+	background    : #b3e3f9;
+	color         : #ffffff;
 	line-height   : 1em;
 	transition    : .3s;
-	border        : 1px solid #b3e1fd;
+	border        : 1px solid transparent;
 	width         : auto;
 	font-family: "HG行書体";
 	font-size:50px;

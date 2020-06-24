@@ -1,14 +1,13 @@
 @charset "UTF-8";
 
-.accbox p{
-	color:#0080ff;
-	font-size:15px;
-}
-
 header{
 	color:#004040;
 	font-size:40px;
-	font-family:"HG行書体";
+	font-family:"impact";
+}
+
+.Tohoku{
+	display:inline-block;
 }
 
 button{
@@ -17,18 +16,18 @@ button{
 	text-align    : center;
 	cursor        : pointer;
 	padding       : 5px 15px;
-	background    : #8080c0;
-	color         : #ffff80;
+	background    : #004040;
+	color         : #ffffff;
 	line-height   : 1em;
 	transition    : .3s;
-	border        : 1px solid #b3e1fd;
+	border        : 1px solid transparent;
 	width         : auto;
 	font-family: "HG行書体";
 	font-size:30px;
 }
 
 body {
-   background-image: url(https://cdn.jalan.jp/jalan/img/9/kuchikomi/1219/KXL/2f95f_0001219009_1.JPG);
+   background-image: url("aomori.jpg");
    background-size: cover;
    text-align:center;
 }
@@ -47,7 +46,7 @@ input[type="submit"]{
 	color         : #ffff80;
 	line-height   : 1em;
 	transition    : .3s;
-	border        : 1px solid #b3e1fd;
+	border        : 1px solid transparent;
 	width         : auto;
 	font-family: "HG行書体";
 	font-size:25px;
@@ -69,14 +68,14 @@ input[type="submit"]{
     padding : 11px 12px;
     color :#008080;
     font-weight: bold;
-    background :#80ffff;
+    background :transparent;
     cursor :pointer;
     transition: all 0.5s;
     font-size:25px;
 }
 
 .accbox label:hover {
-    background :#ecf5da;
+    background :transparent;
 }
 
 .accbox input[type="checkbox"] {
@@ -94,6 +93,6 @@ input[type="submit"]{
 .cssacc:checked + .accshow {
     height: auto;
     padding: 5px;
-    background: #ffffff;
+    background:transparent;
     opacity: 1;
 }

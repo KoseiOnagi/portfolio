@@ -8,17 +8,17 @@
 		<title>Kyushu</title>
 	</head>
 	<body>
-	<body style="background-image: url(https://cdn.4travel.jp/img/tcs/t/pict/src/44/90/34/src_44903484.jpg?1471009820)">
 		<div>
 				<header>
 					<h1 class="headline">
-						<a>Number List(九州)</a>
+						<a>Kyushu's Number</a>
 					</h1>
 					<div class ="Kyushu">
 						<form method="post" action="Number.jsp">
 							<button>エリア選択に戻る</button>
 						</form>
-						
+					</div>
+					<div class ="Kyushu">
 						<form method="post" action="Home.jsp">
 							<button>ホームに戻る</button>
 						</form>

@@ -5,21 +5,21 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="css/Hokkai.css">
-		<title>Hokkaido</title>
+		<title>Hokkaidoh</title>
 	</head>
 	
 	<body>
-	<body style="background-image: url(https://tripeditor.com/wp-content/uploads/2019/07/05183546/shutterstock_1402069754-1200x800.jpg)">
 		<div>
 				<header>
 					<h1 class="headline">
-						<a>Number List(北海道)</a>
+						<a>Hokkaidoh's Number</a>
 					</h1>
 					<div class ="Hokkaido">
 						<form method="post" action="Number.jsp">
 							<button>エリア選択に戻る</button>
 						</form>
-						
+					</div>
+					<div class ="Hokkaido">
 						<form method="post" action="Home.jsp">
 							<button>ホームに戻る</button>
 						</form>

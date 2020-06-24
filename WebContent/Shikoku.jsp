@@ -8,17 +8,17 @@
 		<title>Shikoku</title>
 	</head>
 	<body>
-	<body style="background-image: url(https://shikoku-tourism.com/image/rendering/feature_paragraph_image/148/trim.1024/3/2?v=bbf41e123bbb3509366e7d611c7aff5a79e4e989)">
 		<div>
 				<header>
 					<h1 class="headline">
-						<a>Number List(四国)</a>
+						<a>Shikoku's Number</a>
 					</h1>
 					<div class ="Shikoku">
 						<form method="post" action="Number.jsp">
 							<button>エリア選択に戻る</button>
 						</form>
-						
+					</div>
+					<div class ="Shikoku">
 						<form method="post" action="Home.jsp">
 							<button>ホームに戻る</button>
 						</form>

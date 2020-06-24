@@ -1,14 +1,13 @@
 @charset "UTF-8";
 
-.accbox p{
-	color:#004040;
-	font-size:15px;
-}
-
 header{
 	color:#004040;
 	font-size:40px;
-	font-family:"HG行書体";
+	font-family:"impact";
+}
+
+.Sanin{
+	display:inline-block;
 }
 
 button{
@@ -17,18 +16,18 @@ button{
 	text-align    : center;
 	cursor        : pointer;
 	padding       : 5px 15px;
-	background    : #ff00ff;
-	color         : #ffff80;
+	background    : #004040;
+	color         : #ffffff;
 	line-height   : 1em;
 	transition    : .3s;
-	border        : 1px solid #b3e1fd;
+	border        : 1px solid transparent;
 	width         : auto;
 	font-family: "HG行書体";
 	font-size:30px;
 }
 
 body {
-   background-image: url(https://tori-dori.com/wp/wp-content/uploads/EBP15-24141.jpg);
+   background-image: url("okayama.jpg");
    background-size: cover;
    text-align:center;
 }
@@ -44,10 +43,10 @@ input[type="submit"]{
 	cursor        : pointer;
 	padding       : 5px 15px;
 	background    : #0080ff;
-	color         : #ffff80;
+	color         : #ffffff;
 	line-height   : 1em;
 	transition    : .3s;
-	border        : 1px solid #b3e1fd;
+	border        : 1px solid transparent;
 	width         : auto;
 	font-family: "HG行書体";
 	font-size:25px;
@@ -67,16 +66,16 @@ input[type="submit"]{
     display: block;
     margin: 1.5px 0;
     padding : 11px 12px;
-    color :#008080;
+    color :#ffffff;
     font-weight: bold;
-    background :#80ffff;
+    background :transparent;
     cursor :pointer;
     transition: all 0.5s;
     font-size:25px;
 }
 
 .accbox label:hover {
-    background :#ecf5da;
+    background :transparent;
 }
 
 .accbox input[type="checkbox"] {
@@ -94,6 +93,6 @@ input[type="submit"]{
 .cssacc:checked + .accshow {
     height: auto;
     padding: 5px;
-    background: #ffffff;
+    background:transparent;
     opacity: 1;
 }
