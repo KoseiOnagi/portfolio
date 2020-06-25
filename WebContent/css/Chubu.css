@@ -1,9 +1,13 @@
 @charset "UTF-8";
 
 header{
-	color:#004040;
-	font-size:40px;
-	font-family:"impact";
+	width: 100%;
+	padding: 5px 0px 5px 0px;
+	margin: 0 auto;
+  	color: #ffffff;
+  	text-align: center;
+  	font-family:"impact";
+  	font-size:50px;
 }
 
 .Chubu{
@@ -26,10 +30,15 @@ button{
 	font-size:30px;
 }
 
+button:hover {
+	box-shadow    : none;
+	color         : #004040;
+	background    : #ffffff;
+}
+
 body {
-   background-image: url("nagano.jpg");
+   background-image: url("ishikawa.jpg");
    background-size: cover;
-   text-align:center;
 }
 
 .contents{
@@ -52,10 +61,16 @@ input[type="submit"]{
 	font-size:25px;
 }
 
+input[type="submit"]:hover {
+	box-shadow    : none;
+	color         : #0080ff;
+	background    : #ffffff;
+}
+
 .accbox {
     margin: 2em 0;
     padding: 0;
-    max-width: 600px;
+    max-width: 400px;
     text-align:center;
     margin-left: auto;
     margin-right: auto;
@@ -66,7 +81,7 @@ input[type="submit"]{
     display: block;
     margin: 1.5px 0;
     padding : 11px 12px;
-    color :#800000;
+    color :#00ff40;
     font-weight: bold;
     background :transparent;
     cursor :pointer;

@@ -1,9 +1,13 @@
 @charset "UTF-8";
 
 header{
-	color:#004040;
-	font-size:40px;
-	font-family:"impact";
+	width: 100%;
+	padding: 5px 0px 5px 0px;
+	margin: 0 auto;
+  	color: #808080;
+  	text-align: center;
+  	font-family:"impact";
+  	font-size:50px;
 }
 
 .Kanto{
@@ -26,10 +30,15 @@ button{
 	font-size:30px;
 }
 
+button:hover {
+	box-shadow    : none;
+	color         : #004040;
+	background    : #ffffff;
+}
+
 body {
    background-image: url("chiba.jpg");
    background-size: cover;
-   text-align:center;
 }
 
 .contents{
@@ -52,6 +61,12 @@ input[type="submit"]{
 	font-size:25px;
 }
 
+input[type="submit"]:hover {
+	box-shadow    : none;
+	color         : #0080ff;
+	background    : #ffffff;
+}
+
 .accbox {
     margin: 2em 0;
     padding: 0;
@@ -66,7 +81,7 @@ input[type="submit"]{
     display: block;
     margin: 1.5px 0;
     padding : 11px 12px;
-    color :#0080c0;
+    color :#ffffff;
     font-weight: bold;
     background :transparent;
     cursor :pointer;

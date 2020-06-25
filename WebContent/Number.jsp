@@ -5,14 +5,14 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="css/Number.css">
-		<title>Number List</title>
+		<title>Area List</title>
 	</head>
 
 	<body>
 			<div>
 				<header>
 					<h1 class="headline">
-						<a>Area Number List</a>
+						<a>Area List</a>
 					</h1>
 				
 					<div class ="figure">
@@ -55,10 +55,10 @@
 							<p>近畿</p>
 							</li>
 							<li>
-							<a href="Sanin.jsp">
-								<img src="sanin.png"  title="山陰・山陽" >
+							<a href="Chugoku.jsp">
+								<img src="chugoku.png"  title="中国" >
 							</a>
-							<p>山陰・山陽</p>
+							<p>中国</p>
 							</li>
 							<li>
 							<a href="Shikoku.jsp">

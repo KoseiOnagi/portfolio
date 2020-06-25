@@ -15,13 +15,13 @@
 			   <a>Weather Number</a>
 			 </h1>
 				<a href="Number.jsp">
-					<img src="glass.png" title="数字を見る" align="middle">
+					<img src="glass.png" title="一覧を見る" align="middle">
 				</a>
-				<span>←数字一覧はこちら</span>
+				<span>←数字・エリア一覧はこちら</span>
 					
 			 <div class="search">
 				<form action="Home" method="post" >
-					<input type="text" name="region" value="${weather}" placeholder="数字を検索" />
+					<input type="text" name="code" value="${weather}" placeholder="数字を検索" />
 					<input name="action" type="submit" value="検索" />
 				</form>
 			 </div>	

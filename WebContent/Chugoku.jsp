@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="css/Sanin.css">
+		<link rel="stylesheet" href="css/Chugoku.css">
 		<title>Chugoku</title>
 	</head>
 	<body>
