@@ -5,7 +5,6 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="css/baseStyle.css">
 		<link rel="stylesheet" href="css/Home.css">
 		<title>Weather Number</title>
 	</head>
@@ -14,14 +13,14 @@
 			 <h1 class="headline">
 			   <a>Weather Number</a>
 			 </h1>
-				<a href="Number.jsp">
+				<a href="Japan.jsp">
 					<img src="glass.png" title="一覧を見る" align="middle">
 				</a>
 				<span>←数字・エリア一覧はこちら</span>
 					
 			 <div class="search">
 				<form action="Home" method="post" >
-					<input type="text" name="code" value="${weather}" placeholder="数字を検索" />
+					<input type="text" name="code" value="${weather}" placeholder="数字を検索" autocomplete="off" />
 					<input name="action" type="submit" value="検索" />
 				</form>
 			 </div>	
@@ -29,8 +28,9 @@
 			
 			<div class="outer">
 				<div class = "inner">
-					<c:if test="${day != null }">
+					<c:if test="${day != null}">
 						<div class="day"> <!-- Home.javaの変数day -->
+					      <h3>${region}</h3>
 					      <p>${day}</p>
 							<c:forEach var="weather" items="${day}">
 								<p>${weather}</p>
@@ -41,6 +41,9 @@
 				</div>
 			</div>
 			
+			<a href="Number.jsp">
+					<img src="japan.png" align="middle">
+			</a>
 		</div>
 	</body>
 </html>

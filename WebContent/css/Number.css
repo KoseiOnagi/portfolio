@@ -11,7 +11,7 @@ header{
 }
 
 .area_name{
-	color:#000000;	
+	color:#ffffff;	
 	display: flex;
 	flex-wrap:wrap;
 }
@@ -33,7 +33,7 @@ header{
 }
 
 .areaName{
-	color:#000000;	
+	color:#ffffff;	
 	display: flex;
 	flex-wrap:wrap;
 }
@@ -55,7 +55,7 @@ header{
 }
 
 body {
-   background-image: url("skyblue.jpg");
+   background-image: url("yuyake.jpg");
    background-size: cover;
 }
 
@@ -69,7 +69,7 @@ button{
 	text-align    : center;
 	cursor        : pointer;
 	padding       : 5px 40px;
-	background    : #004040;
+	background    : #ff8000;
 	color         : #ffffff;
 	line-height   : 1em;
 	transition    : .3s;
@@ -81,6 +81,6 @@ button{
 
 button:hover {
 	box-shadow    : none;
-	color         : #004040;
+	color         : #ff8000;
 	background    : #ffffff;
 }

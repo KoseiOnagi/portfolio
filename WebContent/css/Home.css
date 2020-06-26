@@ -1,12 +1,9 @@
 @charset "UTF-8";
 
-iframe{
-	border: none;
-}
-
 body{
 	background-image:url("cloud.jpg");
 	background-size: cover;
+	font-family: "HG行書体";
 }
 
 header{
@@ -21,6 +18,19 @@ header{
 
 a {
 	 text-decoration: none; 
+}
+
+.outer{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 90vh;
+	font-size: 30px;
+	margin-top: 1%;
+}
+
+.day h3{
+	color: #ff8000;
 }
 
 span{

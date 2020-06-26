@@ -4,14 +4,58 @@ header{
 	width: 100%;
 	padding: 5px 0px 5px 0px;
 	margin: 0 auto;
-  	color: #808080;
+  	color: #ffffff;
   	text-align: center;
   	font-family:"impact";
   	font-size:50px;
 }
 
-.Kyushu{
-	display:inline-block;
+.area_name{
+	color:#ffffff;	
+	display: flex;
+	flex-wrap:wrap;
+}
+.area_name li {
+	width: calc(100%/4);
+	padding:0 5px;
+	box-sizing:border-box;
+	list-style: none;
+}
+.area_name li img {
+	max-width:100%;
+	height: auto;
+}
+
+.area_name p{
+	font-size:45px;
+	font-family: "HG行書体";
+	text-align: center;
+}
+
+.areaName{
+	color:#ffffff;	
+	display: flex;
+	flex-wrap:wrap;
+}
+.areaName li {
+	width: calc(100%/4);
+	padding:0 5px;
+	box-sizing:border-box;
+	list-style: none;
+}
+.areaName li img {
+	max-width:100%;
+	height: auto;
+}
+
+.areaName p{
+	font-size:50px;
+	font-family: "HG行書体";
+	text-align: center;
+}
+
+.accbox p{
+	font-size:45px;
 }
 
 button{
@@ -27,7 +71,7 @@ button{
 	border        : 1px solid transparent;
 	width         : auto;
 	font-family: "HG行書体";
-	font-size:30px;
+	font-size:40px;
 }
 
 button:hover {
@@ -37,7 +81,7 @@ button:hover {
 }
 
 body {
-   background-image: url("okinawa.jpg");
+   background-image: url("skyblue.jpg");
    background-size: cover;
 }
 
@@ -52,7 +96,7 @@ input[type="submit"]{
 	cursor        : pointer;
 	padding       : 5px 15px;
 	background    : #0080ff;
-	color         : #ffffff;
+	color         : #ffff80;
 	line-height   : 1em;
 	transition    : .3s;
 	border        : 1px solid transparent;
@@ -81,19 +125,19 @@ input[type="submit"]:hover {
     display: block;
     margin: 1.5px 0;
     padding : 11px 12px;
-    color :#00ff40;
+    color :#ffffff;
     font-weight: bold;
     background :transparent;
     cursor :pointer;
     transition: all 0.5s;
-    font-size:25px;
+    font-size:30px;
 }
 
 .accbox label:hover {
     background :transparent;
 }
 
-.accbox input[type="checkbox"]{
+.accbox input[type="checkbox"] {
     display: none;
 }
 
@@ -108,6 +152,6 @@ input[type="submit"]:hover {
 .cssacc:checked + .accshow {
     height: auto;
     padding: 5px;
-    background:transparent;
+    background: transparent;
     opacity: 1;
 }

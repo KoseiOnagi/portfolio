@@ -30,15 +30,15 @@
    								<input type="checkbox" id="tokushima" class="cssacc" />
     								<div class="accshow">
 						    			 <div class="contents">
-						    		 		<form action="Home" method="get">
+						    		 		<form action="Home" method="post">
         										<input type="hidden" name="code" value="360010">
-        										<input type="submit" value="徳島">
+        										<input type="submit" value="徳島" name="city">
       										</form>
       									 </div>
       									 <div class="contents">
-      										<form action="Home" method="get">
+      										<form action="Home" method="post">
         										<input type="hidden" name="code" value="360020">
-        										<input type="submit" value="日和佐">
+        										<input type="submit" value="日和佐" name="city">
       										</form>
       									</div>
  						   			</div>
@@ -46,9 +46,9 @@
    								<input type="checkbox" id="kagawa" class="cssacc" />
     								<div class="accshow">
 							    		 <div class="contents">
-						    		 		<form action="Home" method="get">
+						    		 		<form action="Home" method="post">
         										<input type="hidden" name="code" value="370000">
-        										<input type="submit" value="高松">
+        										<input type="submit" value="高松" name="city">
       										</form>
       									</div>
  							   		</div>
@@ -56,21 +56,21 @@
    								<input type="checkbox" id="ehime" class="cssacc" />
     								<div class="accshow">
 							    		 <div class="contents">
-						    		 		<form action="Home" method="get">
+						    		 		<form action="Home" method="post">
         										<input type="hidden" name="code" value="380010">
-        										<input type="submit" value="松山">
+        										<input type="submit" value="松山" name="city">
       										</form>
       									 </div>
       									 <div class="contents">
-      										<form action="Home" method="get">
+      										<form action="Home" method="post">
         										<input type="hidden" name="code" value="380020">
-        										<input type="submit" value="新居浜">
+        										<input type="submit" value="新居浜" name="city">
       										</form>
       									 </div>
       									 <div class="contents">
-      										<form action="Home" method="get">
+      										<form action="Home" method="post">
         										<input type="hidden" name="code" value="380030">
-        										<input type="submit" value="宇和島">
+        										<input type="submit" value="宇和島" name="city">
       										</form>
       									 </div>
  							   		</div>
@@ -78,21 +78,21 @@
    								<input type="checkbox" id="kohchi" class="cssacc" />
     								<div class="accshow">
 						  		  		 <div class="contents">
-						    		 		<form action="Home" method="get">
+						    		 		<form action="Home" method="post">
         										<input type="hidden" name="code" value="390010">
-        										<input type="submit" value="高知">
+        										<input type="submit" value="高知" name="city">
       										</form>
       									 </div>
       									 <div class="contents">
-      										<form action="Home" method="get">
+      										<form action="Home" method="post">
         										<input type="hidden" name="code" value="390020">
-        										<input type="submit" value="室戸岬">
+        										<input type="submit" value="室戸岬" name="city">
       										</form>
       									 </div>
       									 <div class="contents">
-      										<form action="Home" method="get">
+      										<form action="Home" method="post">
         										<input type="hidden" name="code" value="390030">
-        										<input type="submit" value="清水">
+        										<input type="submit" value="清水" name="city">
       										</form>
       									 </div>
  						  	 		</div>

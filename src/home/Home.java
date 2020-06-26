@@ -33,15 +33,12 @@ public class Home extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		request.setAttribute("weather", request.getParameter("code"));
-		doPost(request, response);
-
-		/*
+		
 		ServletContext context = getServletContext(); // サーブレットがサーブレットコンテナーと通信するために使用する一連のメソッドを定義するServletContext(インターフェース)
 		RequestDispatcher dis = context.getRequestDispatcher("/Home.jsp");
 		// クライアントからリクエストを受信し、サーバー上の任意のリソース（サーブレット、JSP
 		// ファイル等）に送信するオブジェクトを定義するRequestDispatcher(インターフェース)
 		dis.forward(request, response); // 元のサーブレットへ送られてきたパラメータなども含めてフォワード先のサーブレットへそのままフォワード。Home.jspにフォワードする
-		*/
 	}
 
 	/**
@@ -59,7 +56,11 @@ public class Home extends HttpServlet {
 		String action = "検索";
 		ArrayList<String> day = new ArrayList<String>(); // インスタンス化されたArrayList(day)
 		String weather = request.getParameter("code");
-
+		request.setAttribute("weather", weather);
+		String region = request.getParameter("city");
+		System.out.println(region);
+		request.setAttribute("region", region);
+		
 		try {
 			URL url = new URL(Constant.BASE_API_URL + weather); // インスタンス化(クラスをもとにオブジェクトを生成すること)されたURL
 			String json; // 今使っているAPIの形式
