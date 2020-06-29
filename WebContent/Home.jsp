@@ -11,10 +11,10 @@
 		<div>
 			<header>
 			 <h1 class="headline">
-			   <a>Weather Number</a>
+			   <a>Weather <span>Number</span></a>
 			 </h1>
 				<a href="Japan.jsp">
-					<img src="glass.png" title="一覧を見る" align="middle">
+					<img src="glass.png" title="一覧を見る" align="middle" width="150" height="150">
 				</a>
 				<span>←数字・エリア一覧はこちら</span>
 					
@@ -28,21 +28,21 @@
 			
 			<div class="outer">
 				<div class = "inner">
-					<c:if test="${day != null}">
+					<c:if test="${day != null}">　<!-- Home.javaの変数dayがnullではなかったときの条件分岐(jspで使うときは<c:○○></c:○○>を使う) -->
 						<div class="day"> <!-- Home.javaの変数day -->
-					      <h3>${region}</h3>
-					      <p>${day}</p>
+					      <h3>${region}</h3> <!-- 押した地域の名前 -->
+					      <p>${day}</p> <!-- 天気情報の詳細 -->
 							<c:forEach var="weather" items="${day}">
 								<p>${weather}</p>
 							</c:forEach>
 						</div>
 					</c:if>
-					${error}
+					${error} <!-- 何も書かれていないまたは入力した数字に誤りがあった場合はエラー -->
 				</div>
 			</div>
 			
 			<a href="Number.jsp">
-					<img src="japan.png" align="middle">
+					<img src="japan.png" align="middle" width="200" height="200">
 			</a>
 		</div>
 	</body>

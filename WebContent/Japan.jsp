@@ -11,7 +11,7 @@
 		<div>
 			<header>
 					<h1 class="headline">
-						<a>Japan Number List</a>
+						<a>Japan <span>Number</span> List</a>
 					</h1>
 					<div class ="Japan">
 						<form method="post" action="Home.jsp">
@@ -23,25 +23,25 @@
 				<ul class="area_name">
 					<li>
 						<a href="#北海道">
-							<img src="hokkaido.png"  title="北海道" >
+							<img src="hokkaido.png"  title="北海道" width="300" height="300">
 						</a>
 					<p>北海道</p>
 					</li>
 					<li>
 						<a href="#東北">
-							<img src="tohoku.png"  title="東北" >
+							<img src="tohoku.png"  title="東北" width="250" height="500">
 						</a>
 					<p>東北</p>
 					</li>
 					<li>
 						<a href="#関東">
-							<img src="kanto.png"  title="関東" >
+							<img src="kanto.png"  title="関東" width="300" height="300">
 						</a>
 					<p>関東</p>
 					</li>
 					<li>
 						<a href="#中部">
-							<img src="chubu.png"  title="中部" >
+							<img src="chubu.png"  title="中部" width="300" height="300">
 						</a>
 					<p>中部</p>
 					</li>
@@ -50,27 +50,29 @@
 				<ul class="areaName">
 					<li>
 						<a href="#近畿">
-							<img src="kinki.png"  title="近畿" >
+							<img src="kinki.png"  title="近畿" width="300" height="300">
 						</a>
 					<p>近畿</p>
 					</li>
 					<li>
 						<a href="#中国">
-							<img src="chugoku.png"  title="中国" >
+							<img src="chugoku.png"  title="中国" width="300" height="300">
 						</a>
 					<p>中国</p>
 					</li>
 					<li>
 						<a href="#四国">
-							<img src="shikoku.png"  title="四国" >
+							<img src="shikoku.png"  title="四国" width="300" height="300">
 						</a>
 					<p>四国</p>
 					</li>
 					<li>
 						<a href="#九州">
-							<img src="kyusyu.png"  title="九州" >
+							<img src="kyusyu.png"  title="九州" width="300" height="325">
+							<img src="okinawa.png"  title="九州" width="110" height="110">
 						</a>
 					<p>九州</p>
+					</li>
 				</ul>
 				
 				<div class="accbox">
@@ -79,9 +81,9 @@
    						<input type="checkbox" id="dohoku" class="cssacc" />
     						<div class="accshow">
     								<div class="contents">
-						    		 <form action="Home" method="post">
-        								<input type="hidden" name="code" value="011000">
-        								<input type="submit" value="稚内" name="city">
+						    		 <form action="Home" method="post">　<!-- Home.javaのdoPostに情報が飛ぶ -->
+        								<input type="hidden" name="code" value="011000"> <!-- Home.javaのcodeにvalueの数字が飛ぶ -->
+        								<input type="submit" value="稚内" name="city"> <!-- Home.javaにあるcityに都市名が書かれたボタンの情報が飛ぶ -->
       								 </form>
       								</div>
       								<div class="contents">
@@ -626,10 +628,13 @@
       								 </form>
       								</div>
 						    	</div>
+			</div>
+						   
+						<div class="accboxes">
 						    <p id="近畿">近畿</p>
 						    <label for="mie">三重県</label>
-   								<input type="checkbox" id="mie" class="cssacc" />
-    								<div class="accshow">
+   								<input type="checkbox" id="mie" class="cssaccs" />
+    								<div class="accshows">
 						    			 <div class="contents">
 						    				 <form action="Home" method="post">
         										<input type="hidden" name="code" value="240010">
@@ -644,8 +649,8 @@
       									 </div>
  						   			</div>
  								<label for="shiga">滋賀県</label>
-   								<input type="checkbox" id="shiga" class="cssacc" />
-    								<div class="accshow">
+   								<input type="checkbox" id="shiga" class="cssaccs" />
+    								<div class="accshows">
 							    		 <div class="contents">
 						    				 <form action="Home" method="post">
         										<input type="hidden" name="code" value="250010">
@@ -660,8 +665,8 @@
       									</div>
       								</div>
  								<label for="kyoto">京都府</label>
-   								<input type="checkbox" id="kyoto" class="cssacc" />
-    								<div class="accshow">
+   								<input type="checkbox" id="kyoto" class="cssaccs" />
+    								<div class="accshows">
 							    		 <div class="contents">
 						    				 <form action="Home" method="post">
         										<input type="hidden" name="code" value="260010">
@@ -676,8 +681,8 @@
       									 </div>
  							   		</div>
  								<label for="osaka">大阪府</label>
-   								<input type="checkbox" id="osaka" class="cssacc" />
-    								<div class="accshow">
+   								<input type="checkbox" id="osaka" class="cssaccs" />
+    								<div class="accshows">
 						  		  		 <div class="contents">
 						    				 <form action="Home" method="post">
         										<input type="hidden" name="code" value="270000">
@@ -686,8 +691,8 @@
       									</div>
  						  	 		</div>
  								<label for="hyogo">兵庫県</label>
-   								<input type="checkbox" id="hyogo" class="cssacc" />
-    								<div class="accshow">
+   								<input type="checkbox" id="hyogo" class="cssaccs" />
+    								<div class="accshows">
 						 		   		 <div class="contents">
 						    				 <form action="Home" method="post">
         										<input type="hidden" name="code" value="280010">
@@ -702,8 +707,8 @@
       									 </div>
  						   			</div>
  								<label for="nara">奈良県</label>
-   								<input type="checkbox" id="nara" class="cssacc" />
-    								<div class="accshow">
+   								<input type="checkbox" id="nara" class="cssaccs" />
+    								<div class="accshows">
 						    			 <div class="contents">
 						    				 <form action="Home" method="post">
         										<input type="hidden" name="code" value="290010">
@@ -718,8 +723,8 @@
       									 </div>
  						   			</div>
  						 	  	<label for="wakayama">和歌山県</label>
-   								<input type="checkbox" id="wakayama" class="cssacc" />
-    								<div class="accshow">
+   								<input type="checkbox" id="wakayama" class="cssaccs" />
+    								<div class="accshows">
 						    			 <div class="contents">
 						    				 <form action="Home" method="post">
         										<input type="hidden" name="code" value="300010">
@@ -735,8 +740,8 @@
  									</div>
 						    <p id="中国">中国</p>
 						    <label for="tottori">鳥取県</label>
-   								<input type="checkbox" id="tottori" class="cssacc" />
-    								<div class="accshow">
+   								<input type="checkbox" id="tottori" class="cssaccs" />
+    								<div class="accshows">
 						    			 <div class="contents">
 						    		 		<form action="Home" method="post">
         										<input type="hidden" name="code" value="310010">
@@ -751,8 +756,8 @@
       									 </div>
  						   			</div>
  								<label for="shimane">島根県</label>
-   								<input type="checkbox" id="shimane" class="cssacc" />
-    								<div class="accshow">
+   								<input type="checkbox" id="shimane" class="cssaccs" />
+    								<div class="accshows">
 							    		 <div class="contents">
 						    		 		<form action="Home" method="post">
         										<input type="hidden" name="code" value="320010">
@@ -773,8 +778,8 @@
       									 </div>
  							   		</div>
  								<label for="okayama">岡山県</label>
-   								<input type="checkbox" id="okayama" class="cssacc" />
-    								<div class="accshow">
+   								<input type="checkbox" id="okayama" class="cssaccs" />
+    								<div class="accshows">
 							    		 <div class="contents">
 						    		 		<form action="Home" method="post">
         										<input type="hidden" name="code" value="330010">
@@ -789,8 +794,8 @@
       									 </div>
  							   		</div>
  								<label for="hiroshima">広島県</label>
-   								<input type="checkbox" id="hiroshima" class="cssacc" />
-    								<div class="accshow">
+   								<input type="checkbox" id="hiroshima" class="cssaccs" />
+    								<div class="accshows">
 						  		  		 <div class="contents">
 						    		 		<form action="Home" method="post">
         										<input type="hidden" name="code" value="340010">
@@ -805,8 +810,8 @@
       									 </div>
  						  	 		</div>
  								<label for="yamaguchi">山口県</label>
-   								<input type="checkbox" id="yamaguchi" class="cssacc" />
-    								<div class="accshow">
+   								<input type="checkbox" id="yamaguchi" class="cssaccs" />
+    								<div class="accshows">
 						 		   		 <div class="contents">
 						    		 		<form action="Home" method="post">
         										<input type="hidden" name="code" value="350010">
@@ -834,8 +839,8 @@
  						   			</div>
 						    <p id="四国">四国</p>
 						    <label for="tokushima">徳島県</label>
-   								<input type="checkbox" id="tokushima" class="cssacc" />
-    								<div class="accshow">
+   								<input type="checkbox" id="tokushima" class="cssaccs" />
+    								<div class="accshows">
 						    			 <div class="contents">
 						    		 		<form action="Home" method="post">
         										<input type="hidden" name="code" value="360010">
@@ -850,8 +855,8 @@
       									</div>
  						   			</div>
  								<label for="kagawa">香川県</label>
-   								<input type="checkbox" id="kagawa" class="cssacc" />
-    								<div class="accshow">
+   								<input type="checkbox" id="kagawa" class="cssaccs" />
+    								<div class="accshows">
 							    		 <div class="contents">
 						    		 		<form action="Home" method="post">
         										<input type="hidden" name="code" value="370000">
@@ -860,8 +865,8 @@
       									</div>
  							   		</div>
  								<label for="ehime">愛媛県</label>
-   								<input type="checkbox" id="ehime" class="cssacc" />
-    								<div class="accshow">
+   								<input type="checkbox" id="ehime" class="cssaccs" />
+    								<div class="accshows">
 							    		 <div class="contents">
 						    		 		<form action="Home" method="post">
         										<input type="hidden" name="code" value="380010">
@@ -882,8 +887,8 @@
       									 </div>
  							   		</div>
  								<label for="kohchi">高知県</label>
-   								<input type="checkbox" id="kohchi" class="cssacc" />
-    								<div class="accshow">
+   								<input type="checkbox" id="kohchi" class="cssaccs" />
+    								<div class="accshows">
 						  		  		 <div class="contents">
 						    		 		<form action="Home" method="post">
         										<input type="hidden" name="code" value="390010">
@@ -905,8 +910,8 @@
  						  	 		</div>
 						    <p id="九州">九州</p>
 						    <label for="fukuoka">福岡県</label>
-   								<input type="checkbox" id="fukuoka" class="cssacc" />
-    								<div class="accshow">
+   								<input type="checkbox" id="fukuoka" class="cssaccs" />
+    								<div class="accshows">
 						    			<div class="contents">
 						    		 		<form action="Home" method="post">
         										<input type="hidden" name="code" value="400010">
@@ -933,8 +938,8 @@
       									 </div>
  						   			</div>
  								<label for="saga">佐賀県</label>
-   								<input type="checkbox" id="saga" class="cssacc" />
-    								<div class="accshow">
+   								<input type="checkbox" id="saga" class="cssaccs" />
+    								<div class="accshows">
 							    		 <div class="contents">
 						    		 		<form action="Home" method="post">
         										<input type="hidden" name="code" value="410010">
@@ -949,8 +954,8 @@
       									 </div>
 							    	</div>
  								<label for="nagasaki">長崎県</label>
-   								<input type="checkbox" id="nagasaki" class="cssacc" />
-    								<div class="accshow">
+   								<input type="checkbox" id="nagasaki" class="cssaccs" />
+    								<div class="accshows">
 							    		 <div class="contents">
 						    		 		<form action="Home" method="post">
         										<input type="hidden" name="code" value="420010">
@@ -977,8 +982,8 @@
       									 </div>
  							   		</div>
  								<label for="kumamoto">熊本県</label>
-   								<input type="checkbox" id="kumamoto" class="cssacc" />
-    								<div class="accshow">
+   								<input type="checkbox" id="kumamoto" class="cssaccs" />
+    								<div class="accshows">
 						  		  		 <div class="contents">
 						    		 		<form action="Home" method="post">
         										<input type="hidden" name="code" value="430010">
@@ -1005,8 +1010,8 @@
       									 </div>
  						  	 		</div>
  						  	 	<label for="ohita">大分県</label>
-   								<input type="checkbox" id="ohita" class="cssacc" />
-    								<div class="accshow">
+   								<input type="checkbox" id="ohita" class="cssaccs" />
+    								<div class="accshows">
 						  		  		 <div class="contents">
 						    		 		<form action="Home" method="post">
         										<input type="hidden" name="code" value="440010">
@@ -1033,8 +1038,8 @@
       									 </div>
 						  		  	</div>
  						  	 	<label for="miyazaki">宮崎県</label>
-   								<input type="checkbox" id="miyazaki" class="cssacc" />
-    								<div class="accshow">
+   								<input type="checkbox" id="miyazaki" class="cssaccs" />
+    								<div class="accshows">
 						  		  		 <div class="contents">
 						    		 		<form action="Home" method="post">
         										<input type="hidden" name="code" value="450010">
@@ -1061,8 +1066,8 @@
       									 </div>
 						  		  	</div>
  						  	 	<label for="kagoshima">鹿児島県</label>
-   								<input type="checkbox" id="kagoshima" class="cssacc" />
-    								<div class="accshow">
+   								<input type="checkbox" id="kagoshima" class="cssaccs" />
+    								<div class="accshows">
 						  		  		 <div class="contents">
 						    		 		<form action="Home" method="post">
         										<input type="hidden" name="code" value="460010">
@@ -1089,8 +1094,8 @@
       									 </div>
 						  		  	</div>
  						  	 	<label for="okinawa">沖縄県</label>
-   								<input type="checkbox" id="okinawa" class="cssacc" />
-    								<div class="accshow">
+   								<input type="checkbox" id="okinawa" class="cssaccs" />
+    								<div class="accshows">
 						  		  		 <div class="contents">
 						    		 		<form action="Home" method="post">
         										<input type="hidden" name="code" value="471010">

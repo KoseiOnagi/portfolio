@@ -10,6 +10,16 @@ header{
   	font-size:50px;
 }
 
+.headline span{
+	width: 100%;
+	padding: 1px 0px 1px 0px;
+	margin: 0 auto;
+	text-align: center;
+	color:#b3e3f9;
+	font-family:"impact";
+  	font-size:100px;
+}
+
 .Kanto{
 	display:inline-block;
 }

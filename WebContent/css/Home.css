@@ -8,12 +8,22 @@ body{
 
 header{
 	width: 100%;
-	padding: 5px 0px 5px 0px;
+	padding: 1px 0px 1px 0px;
 	margin: 0 auto;
 	text-align: center;
   	color: #ffffff;
   	font-family:"impact";
   	font-size:50px;
+}
+
+.headline span{
+	width: 100%;
+	padding: 1px 0px 1px 0px;
+	margin: 0 auto;
+	text-align: center;
+	color:#b3e3f9;
+	font-family:"impact";
+  	font-size:100px;
 }
 
 a {
@@ -24,7 +34,7 @@ a {
 	display: flex;
 	justify-content: center;
 	width: 100%;
-	height: 90vh;
+	height: 100vh;
 	font-size: 30px;
 	margin-top: 1%;
 }
@@ -36,6 +46,7 @@ a {
 span{
 	font-family:HG行書体;
 	color:#b3e3f9;
+	font-size:40px;
 }
 
 input[type="text"]{

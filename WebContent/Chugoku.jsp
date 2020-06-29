@@ -11,14 +11,14 @@
 		<div>
 				<header>
 					<h1 class="headline">
-						<a>Chugoku's Number</a>
+						<a>Chugoku's <span>Number</span></a>
 					</h1>
-					<div class ="Sanin">
+					<div class ="Chugoku">
 						<form method="post" action="Number.jsp">
 							<button>エリア選択に戻る</button>
 						</form>
 					</div>
-					<div class ="Sanin">
+					<div class ="Chugoku">
 						<form method="post" action="Home.jsp">
 							<button>ホームに戻る</button>
 						</form>

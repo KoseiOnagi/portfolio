@@ -11,7 +11,7 @@
 		<div>
 				<header>
 					<h1 class="headline">
-						<a>Kinki's Number</a>
+						<a>Kinki's <span>Number</span></a>
 					</h1>
 					<div class ="Kinki">
 						<form method="post" action="Number.jsp">

@@ -12,7 +12,7 @@
 		<div>
 				<header>
 					<h1 class="headline">
-						<a>Hokkaidoh's Number</a>
+						<a>Hokkaidoh's <span>Number</span></a>
 					</h1>
 					<div class ="Hokkaido">
 						<form method="post" action="Number.jsp">

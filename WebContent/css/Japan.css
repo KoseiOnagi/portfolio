@@ -2,7 +2,7 @@
 
 header{
 	width: 100%;
-	padding: 5px 0px 5px 0px;
+	padding: 1px 0px 1px 0px;
 	margin: 0 auto;
   	color: #ffffff;
   	text-align: center;
@@ -10,8 +10,18 @@ header{
   	font-size:50px;
 }
 
+.headline span{
+	width: 100%;
+	padding: 1px 0px 1px 0px;
+	margin: 0 auto;
+	text-align: center;
+	color:#b3e3f9;
+	font-family:"impact";
+  	font-size:100px;
+}
+
 .area_name{
-	color:#ffffff;	
+	color:#ff8000;	
 	display: flex;
 	flex-wrap:wrap;
 }
@@ -33,7 +43,7 @@ header{
 }
 
 .areaName{
-	color:#ffffff;	
+	color:#ff8000;	
 	display: flex;
 	flex-wrap:wrap;
 }
@@ -54,7 +64,15 @@ header{
 	text-align: center;
 }
 
+a {
+	 text-decoration: none; 
+}
+
 .accbox p{
+	font-size:45px;
+}
+
+.accboxes p{
 	font-size:45px;
 }
 
@@ -81,7 +99,7 @@ button:hover {
 }
 
 body {
-   background-image: url("skyblue.jpg");
+   background-image: url("sky.jpg");
    background-size: cover;
 }
 
@@ -96,7 +114,7 @@ input[type="submit"]{
 	cursor        : pointer;
 	padding       : 5px 15px;
 	background    : #0080ff;
-	color         : #ffff80;
+	color         : #ffffff;
 	line-height   : 1em;
 	transition    : .3s;
 	border        : 1px solid transparent;
@@ -114,18 +132,19 @@ input[type="submit"]:hover {
 .accbox {
     margin: 2em 0;
     padding: 0;
-    max-width: 800px;
+    max-width: 550px;
     text-align:center;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 110px;
+    margin-right: 50px;
     font-family: "HG行書体";
+    display: inline-block;
 }
 
 .accbox label {
     display: block;
-    margin: 1.5px 0;
-    padding : 11px 12px;
-    color :#ffffff;
+    margin: 3px 2px;
+    padding : 10px;
+    color :#ff8000;
     font-weight: bold;
     background :transparent;
     cursor :pointer;
@@ -141,6 +160,37 @@ input[type="submit"]:hover {
     display: none;
 }
 
+.accboxes {
+    margin: 2em 0;
+    padding: 0;
+    max-width: 550px;
+    text-align:center;
+    margin-left: 100px;
+    margin-right: 50px;
+    font-family: "HG行書体";
+    display: inline-block;
+}
+
+.accboxes label {
+    display: block;
+    margin: 3px 2px;
+    padding : 10px;
+    color :#ff8000;
+    font-weight: bold;
+    background :transparent;
+    cursor :pointer;
+    transition: all 0.5s;
+    font-size:30px;
+}
+
+.accboxes label:hover {
+    background :transparent;
+}
+
+.accboxes input[type="checkbox"] {
+    display: none;
+}
+
 .accbox .accshow {
     height: 0;
     padding: 0;
@@ -149,7 +199,22 @@ input[type="submit"]:hover {
     transition: 0.5s;
 }
 
+.accboxes .accshows{
+	height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
 .cssacc:checked + .accshow {
+    height: auto;
+    padding: 5px;
+    background: transparent;
+    opacity: 1;
+}
+
+.cssaccs:checked + .accshows {
     height: auto;
     padding: 5px;
     background: transparent;
