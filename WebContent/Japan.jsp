@@ -75,15 +75,15 @@
 					</li>
 				</ul>
 				
-				<div class="accbox">
+				<div class="accbox"> <!-- アコーディオンボックスのクラス -->
 						<p id="北海道">北海道</p>
 						<label for="dohoku">道北</label>
    						<input type="checkbox" id="dohoku" class="cssacc" />
     						<div class="accshow">
     								<div class="contents">
 						    		 <form action="Home" method="post">　<!-- Home.javaのdoPostに情報が飛ぶ -->
-        								<input type="hidden" name="code" value="011000"> <!-- Home.javaのcodeにvalueの数字が飛ぶ -->
-        								<input type="submit" value="稚内" name="city"> <!-- Home.javaにあるcityに都市名が書かれたボタンの情報が飛ぶ -->
+        								<input type="hidden" name="code" value="011000"> <!-- 数字があるvalueの情報codeがHome.javaに飛ぶ -->
+        								<input type="submit" value="稚内" name="city"> <!-- 都市名が書かれたボタンの情報cityがHome.javaに飛ぶ -->
       								 </form>
       								</div>
       								<div class="contents">

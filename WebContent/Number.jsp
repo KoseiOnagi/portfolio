@@ -69,6 +69,7 @@
 							<li>
 							<a href="Kyushu.jsp">
 								<img src="kyusyu.png"  title="九州" >
+								<img src="okinawa.png"  title="九州" width="110" height="110">
 							</a>
 							<p>九州</p>
 							</li>

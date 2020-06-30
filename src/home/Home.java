@@ -33,11 +33,11 @@ public class Home extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		request.setAttribute("weather", request.getParameter("code"));
-		
-		ServletContext context = getServletContext(); // サーブレットがサーブレットコンテナーと通信するために使用する一連のメソッドを定義するServletContext(インターフェース)
+		// リクエストに新しい属性名と値をセットするsetAttribute リクエストスコープHome.jspに格納 変数weatherをcodeとして
+		ServletContext context = getServletContext(); 
+		// サーブレットがサーブレットコンテナーと通信するために使用する一連のメソッドを定義するServletContext(インターフェース) getServletContextでServletContextオブジェクトを返す 
 		RequestDispatcher dis = context.getRequestDispatcher("/Home.jsp");
-		// クライアントからリクエストを受信し、サーバー上の任意のリソース（サーブレット、JSP
-		// ファイル等）に送信するオブジェクトを定義するRequestDispatcher(インターフェース)
+		// クライアントからリクエストを受信し、サーバー上の任意のリソース（サーブレット、JSPファイル等）に送信するオブジェクトを定義するRequestDispatcher(インターフェース)
 		dis.forward(request, response); // 元のサーブレットへ送られてきたパラメータなども含めてフォワード先のサーブレットへそのままフォワード。Home.jspにフォワードする
 	}
 
@@ -53,45 +53,47 @@ public class Home extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// String action = request.getParameter("action"); // リクエストパラメータを取得するgatParameter 変数action
-		String action = "検索";
+		String action = "検索"; // 変数actionを検索とする
 		ArrayList<String> day = new ArrayList<String>(); // インスタンス化されたArrayList(day)
-		String weather = request.getParameter("code");
-		request.setAttribute("weather", weather);
-		String region = request.getParameter("city");
-		System.out.println(region);
-		request.setAttribute("region", region);
+		String weather = request.getParameter("code"); // リクエストパラメータを取得するgatParameter Japan.jspの85行目のような文で天気情報のコードを記した変数codeをweatherとして取得
+		request.setAttribute("weather", weather); // リクエストに新しい属性名と値をセットするsetAttribute リクエストスコープHome.jspに格納 変数weather
+		String region = request.getParameter("city"); // リクエストパラメータを取得するgatParameter Japan.jspの86行目のような文でエリアを表す変数cityをregionとして取得
+		System.out.println(region); // 都市名を表示させる
+		request.setAttribute("region", region); // リクエストに新しい属性名と値をセットするsetAttribute リクエストスコープHome.jspに格納 変数region
 		
-		try {
+		try { // テストしたい文のブロックを指定し、さらに投げられるであろう例外に対する 1 つ以上の対処方法を指定するtry文を使う
 			URL url = new URL(Constant.BASE_API_URL + weather); // インスタンス化(クラスをもとにオブジェクトを生成すること)されたURL
-			String json; // 今使っているAPIの形式
-			// Get通信してStringに（evalするために丸括弧で囲む）
+			String json; // 今使っているAPIの形式。JavaScript Object Notationの略でデータフォーマットの一種
+			// Get通信してStringに（eval(指定した文字列を評価後に連結し、現在のシェルに実行させるコマンド。主にシェルスクリプトや環境設定用のファイルで使用)するために丸括弧で囲む）
 			try (BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream()));) { // インスタンス化されたBufferedReader(テキストファイルを読み込むためのクラス)
-				// 文字列ストリームを読み込むためのクラスであるInputStreamReader
+				// 文字列ストリームを読み込むためのクラスであるInputStreamReader APIと接続して取得した情報と一致しているかどうかを確認
 				json = br.lines().collect(Collectors.joining("", "(", ")"));
 			}
 
 			Bindings jsObj = (Bindings) new ScriptEngineManager().getEngineByName("js").eval(json); // インスタンス化されたBindings(コンテキストの名前とオブジェクトとのバインディングを表す)
-
+			// ScriptEngineクラスの検出およびインスタンス化メカニズムを実装、Managerが作成したすべてのエンジンで共有される状態を格納するキーと値のペアのコレクションを維持するScriptEngineManager
 			jsObj = (Bindings) jsObj.get("forecasts"); // get(key)で取得できるが、戻りはObject型。必要に応じてキャスト
 			// js配列は values() で
-			jsObj.values().stream().map(o -> (Bindings) o).map(o -> o.get("dateLabel") + "\t" + o.get("telop"))
-					.forEach(name -> day.add(name));
+			jsObj.values().stream().map(o -> (Bindings) o).map(o -> o.get("dateLabel") + "\t" + o.get("telop")).forEach(name -> day.add(name));
+			// get(String key) や keySet(),values() などMapのメソッドを利用することが可能  Map<?,?> にキャストしても問題なし
 
 		} catch (Exception e) {
 			e.printStackTrace();
 		} // 例外処理はまるっと雑にしちゃっています。ごめんなさい。
 
-		if (action.equals("検索")) { // 46行目のaction
+		if (action.equals("検索")) { // 56行目の変数action
 
-			if (day.size() != 0) { // 条件分岐でdayのsizeが0でないのならばjspにある変数dayに情報が送られる
+			if (day.size() != 0) { // 条件分岐でdayのsizeが0でないのならばHome.jspにある変数dayに情報が送られる
 
-				request.setAttribute("day", day); // 48行目のday
+				request.setAttribute("day", day); // 57行目の変数day
 
 			} else
 				request.setAttribute("error", Constant.MSG_GET_AREA_ERROR); // もし0であればerror
 		}
-		ServletContext context = getServletContext();
+		ServletContext context = getServletContext(); 
+		// サーブレットがサーブレットコンテナーと通信するために使用する一連のメソッドを定義するServletContext(インターフェース) getServletContextでServletContextオブジェクトを返す
 		RequestDispatcher dis = context.getRequestDispatcher("/Home.jsp");
-		dis.forward(request, response);
+		// クライアントからリクエストを受信し、サーバー上の任意のリソース（サーブレット、JSPファイル等）に送信するオブジェクトを定義するRequestDispatcher(インターフェース)
+		dis.forward(request, response); // 元のサーブレットへ送られてきたパラメータなども含めてフォワード先のサーブレットへそのままフォワード。Home.jspにフォワードする
 	}
 }

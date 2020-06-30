@@ -20,7 +20,7 @@
 					
 			 <div class="search">
 				<form action="Home" method="post" >
-					<input type="text" name="code" value="${weather}" placeholder="数字を検索" autocomplete="off" />
+					<input type="text" name="code" value="${weather}" placeholder="数字を検索" autocomplete="off" /> <!-- 検索ボックスに数字が入力された状態で情報が表示 -->
 					<input name="action" type="submit" value="検索" />
 				</form>
 			 </div>	
@@ -28,12 +28,12 @@
 			
 			<div class="outer">
 				<div class = "inner">
-					<c:if test="${day != null}">　<!-- Home.javaの変数dayがnullではなかったときの条件分岐(jspで使うときは<c:○○></c:○○>を使う) -->
+					<c:if test="${day != null}">　<!-- Home.javaの変数dayがnullではなかったときの条件分岐(jspで使うときはc:を使う) -->
 						<div class="day"> <!-- Home.javaの変数day -->
-					      <h3>${region}</h3> <!-- 押した地域の名前 -->
-					      <p>${day}</p> <!-- 天気情報の詳細 -->
-							<c:forEach var="weather" items="${day}">
-								<p>${weather}</p>
+					      <h3>${region}</h3> <!-- 押した地域の名前 Home.javaの変数regionはここにくる -->
+					      <p>${day}</p> <!-- 天気情報の詳細 Home.javaの変数day -->
+							<c:forEach var="weather" items="${day}"> <!-- 配列、List、Mapなどに対して繰り返し処理を行うforEachを使う Home.javaの変数dayはここにくる -->
+								<p>${weather}</p> <!-- 天気情報を表示 -->
 							</c:forEach>
 						</div>
 					</c:if>
