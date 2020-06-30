@@ -5,7 +5,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="css/Japan.css">
-		<title>Japan Number</title>
+		<title>Japan Number List</title>
 	</head>
 	<body>
 		<div>

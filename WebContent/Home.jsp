@@ -33,7 +33,7 @@
 					      <h3>${region}</h3> <!-- 押した地域の名前 Home.javaの変数regionはここにくる -->
 					      <p>${day}</p> <!-- 天気情報の詳細 Home.javaの変数day -->
 							<c:forEach var="weather" items="${day}"> <!-- 配列、List、Mapなどに対して繰り返し処理を行うforEachを使う Home.javaの変数dayはここにくる -->
-								<p>${weather}</p> <!-- 天気情報を表示 -->
+								<p>${weather}</p> <!-- 天気情報のコードを表示 -->
 							</c:forEach>
 						</div>
 					</c:if>

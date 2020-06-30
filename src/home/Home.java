@@ -32,8 +32,7 @@ public class Home extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		request.setAttribute("weather", request.getParameter("code"));
-		// リクエストに新しい属性名と値をセットするsetAttribute リクエストスコープHome.jspに格納 変数weatherをcodeとして
+		request.setAttribute("weather", request.getParameter("code")); // リクエストに新しい属性名と値をセットするsetAttribute リクエストスコープHome.jspに格納 変数weatherをcodeとして
 		ServletContext context = getServletContext(); 
 		// サーブレットがサーブレットコンテナーと通信するために使用する一連のメソッドを定義するServletContext(インターフェース) getServletContextでServletContextオブジェクトを返す 
 		RequestDispatcher dis = context.getRequestDispatcher("/Home.jsp");
@@ -67,25 +66,26 @@ public class Home extends HttpServlet {
 			// Get通信してStringに（eval(指定した文字列を評価後に連結し、現在のシェルに実行させるコマンド。主にシェルスクリプトや環境設定用のファイルで使用)するために丸括弧で囲む）
 			try (BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream()));) { // インスタンス化されたBufferedReader(テキストファイルを読み込むためのクラス)
 				// 文字列ストリームを読み込むためのクラスであるInputStreamReader APIと接続して取得した情報と一致しているかどうかを確認
-				json = br.lines().collect(Collectors.joining("", "(", ")"));
+				json = br.lines().collect(Collectors.joining("", "(", ")")); // 終端操作(検索・集約・変換・出力機能(ここでは変換)がある)のメソッドcollect。これに引数を与える関数がCollectors
 			}
-
+			// jsはjson、jsObjはjsonObjectを指す
 			Bindings jsObj = (Bindings) new ScriptEngineManager().getEngineByName("js").eval(json); // インスタンス化されたBindings(コンテキストの名前とオブジェクトとのバインディングを表す)
+			// Bindingはバインドの定義に高レベルでアクセスするクラス。バインドは、バインドターゲットオブジェクト(通常はWPF要素)のプロパティと任意のデータ ソース(データベース、XML ファイル、データを格納している任意のオブジェクト等)とを接続
 			// ScriptEngineクラスの検出およびインスタンス化メカニズムを実装、Managerが作成したすべてのエンジンで共有される状態を格納するキーと値のペアのコレクションを維持するScriptEngineManager
 			jsObj = (Bindings) jsObj.get("forecasts"); // get(key)で取得できるが、戻りはObject型。必要に応じてキャスト
-			// js配列は values() で
+			
 			jsObj.values().stream().map(o -> (Bindings) o).map(o -> o.get("dateLabel") + "\t" + o.get("telop")).forEach(name -> day.add(name));
-			// get(String key) や keySet(),values() などMapのメソッドを利用することが可能  Map<?,?> にキャストしても問題なし
+			// 配列はvalues()でおこなう。get(String key)や keySet(),values()などMapのメソッドを利用することが可能  Map<?,?> にキャストしても問題なし
 
-		} catch (Exception e) {
-			e.printStackTrace();
-		} // 例外処理はまるっと雑にしちゃっています。ごめんなさい。
+		} catch (Exception e) { //  例外処理のコマンド
+			e.printStackTrace(); // 例外が発生した原因や行番号などを確認することが可能なコマンドprintStackTrace
+		} //　スタックトレース(エラーが発生したときに表示される内容で、そのエラーが発生するまでの過程（どんな処理がどの順番で呼び出されたかの流れ）を、ざっくりと表示したもの)
 
-		if (action.equals("検索")) { // 56行目の変数action
+		if (action.equals("検索")) { // 55行目の変数action
 
 			if (day.size() != 0) { // 条件分岐でdayのsizeが0でないのならばHome.jspにある変数dayに情報が送られる
 
-				request.setAttribute("day", day); // 57行目の変数day
+				request.setAttribute("day", day); // 56行目の変数day。天気情報の詳細を表示する
 
 			} else
 				request.setAttribute("error", Constant.MSG_GET_AREA_ERROR); // もし0であればerror
